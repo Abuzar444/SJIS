@@ -1,8 +1,8 @@
-import About from './components/About';
-import Hero from './components/Hero';
-import HomeLayout from './components/HomeLayout';
-import Services from './components/Services';
-import Works from './components/Works';
+import About from './pages/About';
+import Hero from './pages/Hero';
+import HomeLayout from './pages/HomeLayout';
+import Services from './pages/Services';
+import Works from './pages/Works';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([

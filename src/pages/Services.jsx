@@ -1,6 +1,6 @@
-import ProjectsCard from './ServicesCard';
+import ServicesCard from '../components/ServicesCard';
 import { services } from '../data';
-import SectionTitle from './SectionTitle';
+import SectionTitle from '../components/SectionTitle';
 
 const Services = () => {
   return (
@@ -8,7 +8,7 @@ const Services = () => {
       <SectionTitle text='Our Services' />
       <div className='py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8'>
         {services.map((service) => {
-          return <ProjectsCard key={service.id} {...service} />;
+          return <ServicesCard key={service.id} {...service} />;
         })}
       </div>
     </section>
