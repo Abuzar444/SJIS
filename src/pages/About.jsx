@@ -1,21 +1,25 @@
-import aboutSvg from '../assets/about.svg';
-import SectionTitle from '../components/SectionTitle';
 const About = () => {
   return (
-    <section className='bg-white py-20' id='about'>
-      <div className='align-element grid md:grid-cols-2 items-center gap-16'>
-        <img src={aboutSvg} className='w-full h-64' />
-        <article>
-          <SectionTitle text='We Love what we do' />
-          <p className='text-slate-600 mt-8 leading-loose'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
-            maiores itaque doloribus asperiores dolorum quas voluptates
-            distinctio, porro beatae quam provident libero animi totam,
-            praesentium voluptatem corrupti dignissimos ipsum accusantium!
-          </p>
-        </article>
+    <>
+      <div className='flex flex-wrap gap-2 sm:gap-x-6 items-center justify-center py-10'>
+        <h1 className='text-4xl font-bold leading-none tracking-tight sm:text-6xl '>
+          We love
+        </h1>
+        <div className='stats bg-primary shadow'>
+          <div className='stat'>
+            <div className='stat-title text-primary-content text-4xl font-bold tracking-widest'>
+              what we do
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+      <p className='mt-6 text-lg leading-8 max-w-2xl mx-auto pb-10'>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quae
+        quam blanditiis vitae, dolor non eveniet ipsum voluptatibus, quia optio
+        aut! Perferendis ipsa cumque ipsam nostrum reprehenderit ad illo sed
+        officiis ea tempore! Similique eos minima sit porro, ratione aspernatur!
+      </p>
+    </>
   );
 };
 export default About;
