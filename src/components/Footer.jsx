@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <div className="w-full h-[20rem] bg-zinc-950">
-            <div className="grid grid-cols-2 h-full w-full">
-                <div className=" px-20 py-4 flex sm:flex-col gap-x-6  gap-y-8 text-white">
+        <div className="w-full sm:h-[20rem] h-[30rem] bg-zinc-950">
+            <div className="grid sm:grid-cols-2 h-full w-full">
+                <div className="px-20 py-4 flex flex-col gap-x-6 gap-6  sm:gap-y-8 text-white">
                     <p>+971 52 5252 706</p>
                     <p>+971 56 6181 832</p>
                     <p>+971 50 7841 076</p>
