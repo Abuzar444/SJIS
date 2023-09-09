@@ -35,7 +35,7 @@ const Navbar = () => {
             to='/'
             className='hidden lg:flex btn btn-primary text-3xl items-center'
           >
-            SIJAS
+            SAJIS
           </NavLink>
           {/* DROPDOWN */}
           <div className='dropdown'>
