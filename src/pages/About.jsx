@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="grid sm:grid-cols-2 my-10 stat align-element">
-      <img src="https://cdn.pixabay.com/photo/2014/09/06/15/40/business-437020_640.jpg" alt="about-image" className="object-cover rounded-tl-[15rem] rounded-br-[15rem] rounded-tr-lg rounded-bl-lg" />
+      <img src="https://cdn.pixabay.com/photo/2014/09/06/15/40/business-437020_640.jpg" alt="about-image" className="object-cover sm:rounded-tl-[15rem] sm:rounded-br-[15rem] rounded-lg" />
       <div>
         <div className='flex flex-wrap gap-2 sm:gap-x-6 items-center justify-center py-10'>
           <h1 className='text-4xl font-bold leading-none tracking-tight sm:text-6xl '>
