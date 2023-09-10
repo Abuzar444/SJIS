@@ -57,3 +57,26 @@ export const services = [
     text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.',
   },
 ];
+
+export const phoneContact = [
+  {
+    number: '+971 52 5252 706'
+  },
+  {
+    number: '+971 50 7841 076'
+  },
+  {
+    number: '+971 56 6181 832'
+  }
+]
+export const emailContact = [
+  {
+    address: 'www.alwazirtyping.com'
+  },
+  {
+    address: 'alwazrityping@gmail.com'
+  },
+  {
+    address: 'location abudhabi'
+  }
+]

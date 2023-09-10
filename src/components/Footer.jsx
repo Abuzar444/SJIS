@@ -1,34 +1,16 @@
+import { phoneContact, emailContact } from "../data"
 const Footer = () => {
-    const phoneContact = [
-        {
-            number: '+971 52 5252 706'
-        },
-        {
-            number: '+971 50 7841 076'
-        },
-        {
-            number: '+971 56 6181 832'
-        }
-    ]
-    const emailContact = [
-        {
-            address: 'www.alwazirtyping.com'
-        },
-        {
-            address: 'alwazrityping@gmail.com'
-        },
-        {
-            address: 'location abudhabi'
-        }
-    ]
+
     return (
         <div className="w-full sm:h-[20rem] h-[30rem] bg-zinc-950 py-5">
             <div className="grid sm:grid-cols-2 h-full w-full align-element">
                 <div className=" py-4 grid sm:grid-cols-2 gap-x-6  sm:gap-y-8 text-white text-center sm:text-left">
-                    <div>
+                    <div className="h-full">
+                        <h5 className="font-bold text-xl text-primary">Phone and whatsapp contact</h5>
                         {phoneContact.map((cont, index) => <p key={index} className="sm:py-6 py-3 flex-wrap">{cont.number}</p>)}
                     </div>
-                    <div>
+                    <div className="h-full">
+                        <h5 className="text-primary font-bold text-xl">social contact</h5>
                         {
                             emailContact.map((email, index) => <p key={index} className="sm:py-6 py-3 flex-wrap">{email.address}</p>)
                         }
