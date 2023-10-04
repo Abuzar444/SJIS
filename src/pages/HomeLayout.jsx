@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import image from '../assets/whatsapp.png'
 import Footer from "../components/Footer"
 import SliderCarousel from "./SliderCarousel"
+import SmallSlider from "./SmallSlider"
 const HomeLayout = () => {
     return (
         <div>
@@ -10,6 +11,9 @@ const HomeLayout = () => {
             <Outlet />
             <div className="hidden md:block">
                 <SliderCarousel />
+            </div>
+            <div className="md:hidden block">
+                <SmallSlider />
             </div>
             <Footer />
             <div>
