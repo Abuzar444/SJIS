@@ -1,9 +1,13 @@
 import { nanoid } from 'nanoid';
-import { FaPassport, FaXRay } from 'react-icons/fa';
-import { MdLocalPolice, MdOutlineEmail, MdLocationOn } from 'react-icons/md'
+import { FaPassport, FaXRay, FaCcVisa, FaDraftingCompass, FaTradeFederation } from 'react-icons/fa';
+import { MdLocalPolice, MdOutlineEmail, MdLocationOn, MdFamilyRestroom, MdAirlines } from 'react-icons/md'
 import { FcCollaboration } from 'react-icons/fc'
 import { BsFillTelephoneFill, BsWhatsapp } from 'react-icons/bs'
 import { CgWebsite } from 'react-icons/cg'
+import { GiMightyHorn, GiHealthIncrease, GiPoliceOfficerHead } from 'react-icons/gi'
+import { AiTwotoneInsurance } from 'react-icons/ai'
+import { SiPassport } from 'react-icons/si'
+import { LiaFileInvoiceSolid } from 'react-icons/lia'
 
 export const links = [
   { id: nanoid(), href: '/', text: 'home' },
@@ -86,5 +90,52 @@ export const emailContact = [
   {
     address: 'location abudhabi',
     icon: <MdLocationOn />
+  }
+]
+
+export const activities = [
+  {
+    activity: 'ALL IMMIGRATION WORKING',
+    icon: <GiMightyHorn />
+  },
+  {
+    activity: 'Family visa typing',
+    icon: <MdFamilyRestroom />
+  },
+  {
+    activity: 'Daman health insurance',
+    icon: <GiHealthIncrease />
+  },
+  {
+    activity: 'Visit visa service',
+    icon: <FaCcVisa />
+  },
+  {
+    activity: 'All airlines tickets',
+    icon: <MdAirlines />
+  },
+  {
+    activity: 'Vihicles insurance',
+    icon: <AiTwotoneInsurance />
+  },
+  {
+    activity: 'New company opening',
+    icon: <FaDraftingCompass />
+  },
+  {
+    activity: 'All trade license work',
+    icon: <FaTradeFederation />
+  },
+  {
+    activity: 'Passport renewel',
+    icon: <SiPassport />
+  },
+  {
+    activity: 'CV Quation invoices',
+    icon: <LiaFileInvoiceSolid />
+  },
+  {
+    activity: 'TRAFIC & POLICE DEPARTMENT WORKS',
+    icon: <GiPoliceOfficerHead />
   }
 ]

@@ -1,25 +1,55 @@
-import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import { activities } from '../data';
 
 const SliderCarousel = () => {
     const settings = {
-        dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        // fade: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        pauseOnHover: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: '768px',
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: '480px',
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
     };
     return (
-        <div>
-            <Slider {...settings} />
+        <main className='py-20 rounded-md mb-10 max-w-[90vw] mx-auto bg-slate-300'>
             <div>
-                <h1>H1</h1>
+                <Slider {...settings}>
+                    {activities.map((activity) => {
+                        return (
+                            <div className=' '>
+                                <p className='text-7xl btn-primary py-6 pl-14 mx-2 my-2 rounded shadow-2xl'>{activity.icon}</p>
+                                <h3 className='text-slate-800 text-center capitalize text-lg'>{activity.activity}</h3>
+                            </div>
+                        )
+                    })}
+                </Slider>
             </div>
-            <div>
-                <h1>H1</h1>
-            </div>
-        </div>
+        </main>
     )
 }
 export default SliderCarousel
