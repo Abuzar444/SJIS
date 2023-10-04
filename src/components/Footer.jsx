@@ -7,12 +7,12 @@ const Footer = () => {
                 <div className=" py-4 grid sm:grid-cols-2 gap-x-6  sm:gap-y-8 text-white text-center sm:text-left">
                     <div>
                         <h5 className="font-bold text-xl text-primary">Phone and whatsapp contact</h5>
-                        {phoneContact.map((cont, index) => <p key={index} className="sm:py-6 py-3 flex-wrap">{cont.number}</p>)}
+                        {phoneContact.map((cont, index) => <p key={index} className="sm:py-6 py-3 flex-wrap flex items-center gap-2"><span className="">{cont.icon}</span>{cont.number}</p>)}
                     </div>
                     <div>
                         <h5 className="text-primary font-bold text-xl">social contact</h5>
                         {
-                            emailContact.map((email, index) => <p key={index} className="sm:py-6 py-3 flex-wrap">{email.address}</p>)
+                            emailContact.map((email, index) => <p key={index} className="sm:py-6 py-3 flex-wrap flex items-center gap-2"><span>{email.icon}</span>{email.address}</p>)
                         }
                     </div>
 

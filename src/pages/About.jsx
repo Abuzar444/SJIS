@@ -1,3 +1,5 @@
+import SliderCarousel from './SliderCarousel'
+
 const About = () => {
   return (
     <div className="grid sm:grid-cols-2 my-10 stat align-element">

@@ -10,7 +10,7 @@ const HomeLayout = () => {
             <Footer />
             <div>
                 <a href="https://wa.me/971566181832" target='_blank'>
-                    <img src={image} alt="whatsapp-image" className="w-[100px] fixed left-0 bottom-0 z-10 animate-bounce" />
+                    <img src={image} alt="whatsapp-image" className="w-[100px] fixed right-0 bottom-0 z-10 animate-bounce" />
                 </a>
             </div>
         </div>

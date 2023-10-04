@@ -1,7 +1,9 @@
 import { nanoid } from 'nanoid';
-import { FaPassport, FaJs, FaReact } from 'react-icons/fa';
-import { MdLocalPolice } from 'react-icons/md'
+import { FaPassport, FaXRay } from 'react-icons/fa';
+import { MdLocalPolice, MdOutlineEmail, MdLocationOn } from 'react-icons/md'
 import { FcCollaboration } from 'react-icons/fc'
+import { BsFillTelephoneFill, BsWhatsapp } from 'react-icons/bs'
+import { CgWebsite } from 'react-icons/cg'
 
 export const links = [
   { id: nanoid(), href: '/', text: 'home' },
@@ -60,23 +62,29 @@ export const services = [
 
 export const phoneContact = [
   {
-    number: '+971 52 5252 706'
+    number: '+971 52 5252 706',
+    icon: <BsFillTelephoneFill />,
   },
   {
-    number: '+971 50 7841 076'
+    number: '+971 50 7841 076',
+    icon: <BsWhatsapp />
   },
   {
-    number: '+971 56 6181 832'
+    number: '+971 56 6181 832',
+    icon: <FaXRay />
   }
 ]
 export const emailContact = [
   {
-    address: 'www.alwazirtyping.com'
+    address: 'www.alwazirtyping.com',
+    icon: <MdOutlineEmail />
   },
   {
-    address: 'alwazrityping@gmail.com'
+    address: 'alwazrityping@gmail.com',
+    icon: <CgWebsite />
   },
   {
-    address: 'location abudhabi'
+    address: 'location abudhabi',
+    icon: <MdLocationOn />
   }
 ]
