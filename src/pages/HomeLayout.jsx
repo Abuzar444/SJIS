@@ -8,7 +8,9 @@ const HomeLayout = () => {
         <div>
             <Navbar />
             <Outlet />
-            <SliderCarousel />
+            <div className="hidden md:block">
+                <SliderCarousel />
+            </div>
             <Footer />
             <div>
                 <a href="https://wa.me/971566181832" target='_blank'>

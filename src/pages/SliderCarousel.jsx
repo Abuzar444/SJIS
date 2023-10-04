@@ -14,26 +14,6 @@ const SliderCarousel = () => {
         autoplaySpeed: 1500,
         pauseOnHover: true,
         arrows: false,
-        responsive: [
-            {
-                breakpoint: '768px',
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: '480px',
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
     };
     return (
         <main className='py-20 rounded-md mb-10 max-w-[90vw] mx-auto bg-slate-300'>
@@ -42,7 +22,7 @@ const SliderCarousel = () => {
                     {activities.map((activity) => {
                         return (
                             <div className=' '>
-                                <p className='text-7xl btn-primary py-6 pl-14 mx-2 my-2 rounded shadow-2xl'>{activity.icon}</p>
+                                <p className='text-7xl btn-primary py-6 pl-20 md:pl-4 mx-2 my-2 rounded shadow-2xl'>{activity.icon}</p>
                                 <h3 className='text-slate-800 text-center capitalize text-lg'>{activity.activity}</h3>
                             </div>
                         )
