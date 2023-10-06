@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@tailwindcss/typography": "^0.5.10",
     "daisyui": "^3.5.1",
     "nanoid": "^4.0.2",

@@ -79,6 +79,7 @@ export const phoneContact = [
     icon: <FaXRay />
   }
 ]
+
 export const emailContact = [
   {
     address: 'www.alwazirtyping.com',
@@ -140,3 +141,5 @@ export const activities = [
     icon: <GiPoliceOfficerHead />
   }
 ]
+
+export const heroText = `Starting a business in Dubai can be a complex process, but we're here to simplify it for you. With our expertise and knowledge of the local business landscape, we provide comprehensive support to help you kickstart your entrepreneurial journey in this thriving city. From company registration and legal formalities to understanding the market dynamics, we offer a tailored approach to suit your specific needs. Dubai's strategic location and business-friendly environment present incredible opportunities, and we are dedicated to assisting you every step of the way to turn your business aspirations into a successful reality. Let us be your trusted partner in realizing your dreams of establishing a thriving business in Dubai. `
