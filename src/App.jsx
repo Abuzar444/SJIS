@@ -3,6 +3,7 @@ import Hero from './pages/Hero';
 import HomeLayout from './pages/HomeLayout';
 import Services from './pages/Services';
 import Works from './pages/Works';
+import ContactUs from './pages/ContactUs'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'services',
         element: <Services />
+      },
+      {
+        path: 'contact',
+        element: <ContactUs />
       }
     ]
   }

@@ -14,6 +14,7 @@ export const links = [
   { id: nanoid(), href: '/works', text: 'works' },
   { id: nanoid(), href: '/about', text: 'about' },
   { id: nanoid(), href: '/services', text: 'services' },
+  { id: nanoid(), href: '/contact', text: 'contact' }
 ];
 
 export const works = [
@@ -81,11 +82,11 @@ export const phoneContact = [
 export const emailContact = [
   {
     address: 'www.alwazirtyping.com',
-    icon: <MdOutlineEmail />
+    icon: <CgWebsite />
   },
   {
     address: 'alwazrityping@gmail.com',
-    icon: <CgWebsite />
+    icon: <MdOutlineEmail />
   },
   {
     address: 'location abudhabi',
