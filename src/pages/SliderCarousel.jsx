@@ -23,7 +23,7 @@ const SliderCarousel = () => {
                         return (
                             <div className=' '>
                                 <p className='text-7xl btn-primary pl-14 py-10 mx-2 my-2 rounded shadow-2xl text-center text-neutral'>{activity.icon}</p>
-                                <h3 className=' text-info text-center capitalize text-lg'>{activity.activity}</h3>
+                                <p className=' text-info text-center capitalize text-lg'>{activity.activity}</p>
                             </div>
                         )
                     })}

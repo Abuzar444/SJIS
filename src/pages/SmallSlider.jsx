@@ -21,7 +21,7 @@ const SmallSlider = () => {
                         return (
                             <div className=' '>
                                 <p className='text-7xl btn-primary py-20 pl-32 mx-2 my-2 rounded shadow-2xl text-center'>{activity.icon}</p>
-                                <h3 className=' text-neutral-content text-center capitalize text-2xl'>{activity.activity}</h3>
+                                <p className=' text-neutral-content text-center capitalize text-2xl'>{activity.activity}</p>
                             </div>
                         )
                     })}

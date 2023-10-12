@@ -7,6 +7,7 @@ import ContactUs from './pages/ContactUs'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorElement from './components/ErrorElement';
 import Error from './pages/Error'
+
 const router = createBrowserRouter([
   {
     path: '/',

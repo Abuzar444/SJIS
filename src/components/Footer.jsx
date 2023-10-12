@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="grid sm:grid-cols-2 h-full w-full align-element flex-wrap">
                 <div className=" py-4 grid sm:grid-cols-2 gap-x-6  sm:gap-y-8 text-white text-center sm:text-left">
                     <div>
-                        <h5 className="font-bold text-xl text-primary">Phone and whatsapp contact</h5>
+                        <p className="font-bold text-xl text-primary">Phone and whatsapp contact</p>
                         {phoneContact.map((cont, index) => {
                             return (
                                 <div className="text-center mx-auto">
@@ -21,7 +21,7 @@ const Footer = () => {
                         })}
                     </div>
                     <div>
-                        <h5 className="text-primary font-bold text-xl">social contact</h5>
+                        <p className="text-primary font-bold text-xl">social contact</p>
                         {
                             emailContact.map((email, index) => <p key={index} className="sm:py-6 py-3 flex-wrap flex items-center gap-2"><span className="text-primary text-xl">{email.icon}</span>{email.address}</p>)
                         }

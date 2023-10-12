@@ -1,9 +1,16 @@
+import { Helmet } from "react-helmet-async"
 import { useRouteError, Link } from "react-router-dom"
 
 const Error = () => {
+
     const error = useRouteError()
     console.log(error.status)
     if (error.status === 404) {
+        <Helmet>
+            <title>Error</title>
+            <meta name="Error" content="Sorry the page you are for don't exists" />
+            <link rel="canonical" href="/*" />
+        </Helmet>
         return (
             <main className="grid min-h-[100vh] place-items-center px-8">
                 <div className="text-center">
@@ -24,9 +31,16 @@ const Error = () => {
         )
     }
     return (
-        <div className="min-h-screen grid place-items-center px-8">
-            <h4 className="text-center font-bold text-4xl">there was an error...</h4>
-        </div>
+        <>
+            <Helmet>
+                <title>Error</title>
+                <meta name="Error" content="Sorry the page you are for don't exists" />
+                <link rel="canonical" href="/*" />
+            </Helmet>
+            <div className="min-h-screen grid place-items-center px-8">
+                <h4 className="text-center font-bold text-4xl">there was an error...</h4>
+            </div>
+        </>
     )
 }
 export default Error
