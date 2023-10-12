@@ -4,7 +4,7 @@ import image from '../assets/whatsapp.png'
 import Footer from "../components/Footer"
 import SliderCarousel from "./SliderCarousel"
 import SmallSlider from "./SmallSlider"
-import MediumSlider from "./MediumSlider"
+
 const HomeLayout = () => {
     return (
         <div>
