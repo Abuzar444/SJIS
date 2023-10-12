@@ -143,3 +143,26 @@ export const activities = [
 ]
 
 export const heroText = `Starting a business in Dubai can be a complex process, but we're here to simplify it for you. With our expertise and knowledge of the local business landscape, we provide comprehensive support to help you kickstart your entrepreneurial journey in this thriving city. From company registration and legal formalities to understanding the market dynamics, we offer a tailored approach to suit your specific needs. Dubai's strategic location and business-friendly environment present incredible opportunities, and we are dedicated to assisting you every step of the way to turn your business aspirations into a successful reality. Let us be your trusted partner in realizing your dreams of establishing a thriving business in Dubai. `
+
+export const aboutContent = [
+  {
+    title: 'About SJIS',
+    content: `At SJIS, we are your dedicated partner in making your entrepreneurial dreams come true in the vibrant city of Dubai. Our mission is to simplify the complex process of starting a business in this dynamic and prosperous environment.`
+  },
+  {
+    title: 'Who We Are',
+    content: `We are a team of experienced professionals with an in-depth understanding of the local business landscape in Dubai. With our expertise, we provide comprehensive support tailored to your specific needs.`
+  },
+]
+export const aboutContent2 = [
+  {
+    title: 'Why Choose SJIS?',
+    content: `Experience: With a proven track record, we've assisted numerous entrepreneurs in establishing successful businesses in Dubai.
+Tailored Approach: We understand that each business is unique. Our solutions are customized to meet your specific requirements.
+Dedicated Support: We stand by your side every step of the way, from inception to growth, ensuring your success.`
+  },
+  {
+    title: ` Your Dreams`,
+    content: `Dubai is a city of limitless possibilities, and we're here to help you turn your business aspirations into reality. With SJIS as your trusted partner, you can confidently take the first steps towards establishing and growing your business in this thriving city.`
+  },
+]

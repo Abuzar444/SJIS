@@ -5,31 +5,38 @@ import Services from './pages/Services';
 import Works from './pages/Works';
 import ContactUs from './pages/ContactUs'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-
+import ErrorElement from './components/ErrorElement';
+import Error from './pages/Error'
 const router = createBrowserRouter([
   {
     path: '/',
     element: <HomeLayout />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
-        element: <Hero />
+        element: <Hero />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'about',
-        element: <About />
+        element: <About />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'Works',
-        element: <Works />
+        element: <Works />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'services',
-        element: <Services />
+        element: <Services />,
+        errorElement: <ErrorElement />
       },
       {
         path: 'contact',
-        element: <ContactUs />
+        element: <ContactUs />,
+        errorElement: <ErrorElement />
       }
     ]
   }
